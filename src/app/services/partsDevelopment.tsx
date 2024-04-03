@@ -14,7 +14,7 @@ const PartsDevelopment = () => {
             </div>
           <div className="w-full md:w-2/3 px-8 pt-8 pb-8">
             <h1 className="text-2xl font-bold mb-4">Parts development</h1>
-            <p>Our dedicated team of engineers and designers works tirelessly to innovate and develop new parts that meet the evolving needs of our customers. With cutting-edge technology and a commitment to excellence, we strive to push the boundaries of what's possible.</p>
+            <p>Our dedicated team of engineers and designers works tirelessly to innovate and develop new parts that meet the evolving needs of our customers. With cutting-edge technology and a commitment to excellence, we strive to push the boundaries of what&apos;s possible.</p>
           </div>
         </div>
       );
