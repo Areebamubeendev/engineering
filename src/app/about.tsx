@@ -38,10 +38,10 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div className={`flex flex-col md:flex-row md:space-x-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           {/* About us */}
-          <div className="h-80 items-center justify-center bg-slate-400 rounded-lg p-6 md:w-1/2 h-full flex flex-col">
+          <div className="h-80 items-center justify-center bg-slate-400 rounded-lg p-6 md:w-1/2 md:h-80 flex flex-col">
             <h2 className="text-2xl font-bold text-center md:text-left mb-4">About us</h2>
           </div>
-          <div className="h-80 items-center justify-center bg-slate-100 rounded-lg p-6 md:w-1/2 h-full flex flex-col">
+          <div className="h-80 items-center justify-center bg-slate-100 rounded-lg p-6 md:w-1/2 md:h-80 flex flex-col">
             <p className="text-gray-700 text-center md:text-left">AMJAD ENGINEERING was established in 1988 in Lahore, Pakistan. Our company specializes in machine parts for the tobacco industry and plastic molding machine parts. Our commitment to providing excellence in quality and service has made us a reliable player in the industry.</p>
           </div>
         </div>
