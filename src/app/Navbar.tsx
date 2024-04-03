@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useRouter } from 'next/navigation';
 
 
-const Navbar = ({ tab }) => {
+const Navbar = ({tab} : {tab:any}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServiceClicked, setIsServiceClicked] = useState(false);
   const [subTab, setSubTab] = useState(1);
@@ -19,7 +19,7 @@ const Navbar = ({ tab }) => {
     setIsOpen(!isOpen);
   };
 
-  const serviceClick = (option) => {
+  const serviceClick = (option:boolean) => {
     setIsServiceClicked(option);
   };
 
@@ -47,7 +47,7 @@ const Navbar = ({ tab }) => {
     }
   }, [subTab])
 
-  const serviceSubTabClick = (elementId) =>{
+  const serviceSubTabClick = () =>{
     if(tab != 2){
         router.push('/services');
     }
@@ -105,16 +105,16 @@ const Navbar = ({ tab }) => {
               Services
             </Link>
            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <div onClick={()=>{setIsOpen(false); setSubTab(1); serviceSubTabClick('parts')}} className={`text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 1 ?'bg-slate-400':'':''}`}>
+            <div onClick={()=>{setIsOpen(false); setSubTab(1); serviceSubTabClick()}} className={`text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 1 ?'bg-slate-400':'':''}`}>
               <a>Parts Manufacturing</a>
             </div>
-            <div onClick={()=>{setIsOpen(false); setSubTab(2); serviceSubTabClick('development')}} className={`text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 2 ?'bg-slate-400':'':''}`}>
+            <div onClick={()=>{setIsOpen(false); setSubTab(2); serviceSubTabClick()}} className={`text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 2 ?'bg-slate-400':'':''}`}>
               <a>Parts Development</a>
             </div>
-            <div onClick={()=>{setIsOpen(false); setSubTab(3);serviceSubTabClick('maintaince')}} className={`text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 3 ?'bg-slate-400':'':''}`}>
+            <div onClick={()=>{setIsOpen(false); setSubTab(3);serviceSubTabClick()}} className={`text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 3 ?'bg-slate-400':'':''}`}>
               <a >Maintenance Services</a>
             </div>
-            <div onClick={()=>{ setIsOpen(false); setSubTab(4); serviceSubTabClick('equipment')}} className={`text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 4 ?'bg-slate-400':'':''}`}>
+            <div onClick={()=>{ setIsOpen(false); setSubTab(4); serviceSubTabClick()}} className={`text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 4 ?'bg-slate-400':'':''}`}>
               <a >Equipment Modernization</a>
             </div>
           </div>
@@ -130,16 +130,16 @@ const Navbar = ({ tab }) => {
     onMouseOut={() => serviceClick(false)}
     className="absolute top-16 inset-x-0 px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-200/45 z-10"
   >
-    <div onClick={()=>{  serviceSubTabClick('parts'); setIsOpen(false); setSubTab(1);}} className={`cursor-pointer text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 1 ?'bg-slate-400':'':''}`}>
+    <div onClick={()=>{  serviceSubTabClick(); setIsOpen(false); setSubTab(1);}} className={`cursor-pointer text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 1 ?'bg-slate-400':'':''}`}>
       <a >Parts Manufacturing</a>
     </div>
-    <div onClick={()=>{ serviceSubTabClick('development'); setIsOpen(false); setSubTab(2);}} className={`cursor-pointer text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 2 ?'bg-slate-400':'':''}`}>
+    <div onClick={()=>{ serviceSubTabClick(); setIsOpen(false); setSubTab(2);}} className={`cursor-pointer text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 2 ?'bg-slate-400':'':''}`}>
       <a>Parts Development</a>
     </div>
-    <div onClick={()=>{ serviceSubTabClick('maintaince'); setIsOpen(false); setSubTab(3); }} className={`cursor-pointer text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 3 ?'bg-slate-400':'':''}`}>
+    <div onClick={()=>{ serviceSubTabClick(); setIsOpen(false); setSubTab(3); }} className={`cursor-pointer text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 3 ?'bg-slate-400':'':''}`}>
       <a >Maintenance Services</a>
     </div>
-    <div onClick={()=>{ serviceSubTabClick('equipment'); setIsOpen(false); setSubTab(4); }} className={`cursor-pointer text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 4 ?'bg-slate-400':'':''}`}>
+    <div onClick={()=>{ serviceSubTabClick(); setIsOpen(false); setSubTab(4); }} className={`cursor-pointer text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 ${tab == 2 ? subTab == 4 ?'bg-slate-400':'':''}`}>
       <a >Equipment Modernization</a>
     </div>
   </div>
