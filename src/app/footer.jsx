@@ -8,16 +8,16 @@ const Footer = () => {
             {/* Address */}
             <div>
               <h3 className="text-lg font-bold mb-2">Main Address:</h3>
-              <p>Road Peer near Christian Graveyard</p>
-              <p>Unit 2: Salampat Pura</p>
-              <p>Unit 3: Sunder Industrial Estate</p>
+              <p>Road Peer near Christian Graveyard, Lahore</p>
+              <p>Unit 2: Salampat Pura, Lahore</p>
+              <p>Unit 3: Sunder Industrial Estate, Lahore</p>
             </div>
   
             {/* Contact Info */}
             <div>
               <h3 className="text-lg font-bold mb-2">Contact Information:</h3>
               <p>Email: amjad_eng666@yahoo.com</p>
-              <p>Phone: +123 456 789</p>
+              <p>Phone: +923219474620</p>
             </div>
           </div>
         </div>

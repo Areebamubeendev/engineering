@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from 'next/navigation';
+import companyIcon from './assets/companyIcon.jpeg'
 
 
 const Navbar = ({tab} : {tab:any}) => {
@@ -62,8 +63,15 @@ const Navbar = ({tab} : {tab:any}) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <a  href="/"  className="text-white font-bold">Amjad Engineering</a>
+            <div className="flex items-center">
+            <Image
+                  src="/companyIcon.ico"
+                  width={80}
+                  height={80}
+                  alt="Picture of the author"
+                  // className="p-8 bg-local bg-gray-500 bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-soft-light dark:hover:bg-blend-darken"
+                />
+              <a  href="/"  className="text-white font-bold ml-6">Amjad Engineering Works</a>
             </div>
           </div>
           <div className="flex">

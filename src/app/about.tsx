@@ -42,7 +42,7 @@ const About = () => {
             <h2 className="text-2xl font-bold text-center md:text-left mb-4">About us</h2>
           </div>
           <div className="h-80 items-center justify-center bg-slate-100 rounded-lg p-6 md:w-1/2 md:h-80 flex flex-col">
-            <p className="text-gray-700 text-center md:text-left">AMJAD ENGINEERING was established in 1988 in Lahore, Pakistan. Our company specializes in machine parts for the tobacco industry and plastic molding machine parts. Our commitment to providing excellence in quality and service has made us a reliable player in the industry.</p>
+            <p className="text-gray-700 text-center md:text-left">AMJAD ENGINEERING WORKS was established in 1988 in Lahore, Pakistan. Our company specializes in machine parts for the tobacco industry and plastic molding machine parts. Our commitment to providing excellence in quality and service has made us a reliable player in the industry.</p>
           </div>
         </div>
       </div>
